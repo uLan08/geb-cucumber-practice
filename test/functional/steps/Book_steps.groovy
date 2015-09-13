@@ -1,5 +1,5 @@
 import static cucumber.api.groovy.EN.*
-//import pages.ListPage
+import pages.ListPage
 
 
 Given (~'^I open the book tracker$') { ->
@@ -7,10 +7,10 @@ Given (~'^I open the book tracker$') { ->
 //    to listpage
 //    at listpage
 
-    go "http://localhost:8090/cucumberprac/book/index"
+//    go "http://localhost:8090/cucumberprac/book/index"
 
-//    to ListPage
-//    at ListPage
+    to ListPage
+    at ListPage
 }
 
 When (~'^I add "([^"]*)"$') { String bookTitle ->
