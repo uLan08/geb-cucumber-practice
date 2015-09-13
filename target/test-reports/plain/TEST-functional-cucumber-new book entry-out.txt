@@ -1,0 +1,18 @@
+Feature: new book entry
+  As a book owner
+  I want to add books I own to the book tracker
+  so that I do not have to remember them by myself
+
+--Output from new book--
+  Scenario: new book                               # NewBook.feature:6
+    Given I open the book tracker                  # Book_steps.groovy:5
+    When I add "Specification by Example"          # Book_steps.groovy:16
+      Assertion failed: 
+      
+      assert false
+      
+      
+      	at Book_steps$_run_closure2.doCall(Book_steps.groovy:17)
+      	at ✽.When I add "Specification by Example"(NewBook.feature:8)
+
+    Then I see "Specification by Example"s details # Book_steps.groovy:20

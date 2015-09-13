@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="Poseidon" id="0" name="new book entry" package="" tests="1" time="3.807" timestamp="2015-09-13T15:28:27">
+      <properties />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="new book" time="0.635">
+          <failure message="assert false&#xa;" type="grails.plugin.cucumber.FakeAssertionFailedError">Assertion failed: 
+
+assert false
+
+
+	at Book_steps$_run_closure2.doCall(Book_steps.groovy:17)
+	at ✽.When I add &quot;Specification by Example&quot;(NewBook.feature:8)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[Feature: new book entry
+  As a book owner
+  I want to add books I own to the book tracker
+  so that I do not have to remember them by myself
+
+--Output from new book--
+  Scenario: new book                               # NewBook.feature:6
+    Given I open the book tracker                  # Book_steps.groovy:5
+    When I add "Specification by Example"          # Book_steps.groovy:16
+      Assertion failed: 
+      
+      assert false
+      
+      
+      	at Book_steps$_run_closure2.doCall(Book_steps.groovy:17)
+      	at ✽.When I add "Specification by Example"(NewBook.feature:8)
+
+    Then I see "Specification by Example"s details # Book_steps.groovy:20
+]]></system-out>
+
+      <system-err><![CDATA[
+--Output from new book--]]></system-err>
+
+  </testsuite>
+</testsuites>
